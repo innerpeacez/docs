@@ -363,6 +363,7 @@ module.exports = [
               // 'msp/guides/apm/service-analysis',
               'msp/guides/apm/browser-monitor',
               'msp/guides/apm/browser-monitor-config',
+              'msp/guides/apm/java-agent-guide',
               'msp/guides/apm/trace',
               'msp/guides/apm/checker',
               'msp/guides/apm/alert-config',

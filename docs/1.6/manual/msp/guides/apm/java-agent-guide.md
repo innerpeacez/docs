@@ -1,4 +1,6 @@
-# Erda 中的 Agent 使用
+# Erda 中的 Java Agent 使用
+
+Github 源码地址： https://github.com/erda-project/erda-java-extensions
 
 ## Agent 介绍
 Java 5 版本以后，JDK 提供了 instrument 包，能够实现一些非常酷的功能，市面上一些 APM 工具，就是通过它来进行的增强，这个功能对于业务开发者来说，是比较偏门的。
@@ -53,7 +55,9 @@ Java 5 版本以后，JDK 提供了 instrument 包，能够实现一些非常酷
 #### 插件详解
 
 ##### agent-cpu-plugin 详解
+cpu 插件用来采集 jvm 当前进程 cpu 使用率，最终数据通过计算 jvm 所有线程使用 cpu 的时间得出。默认开启，每 20 秒采集一次。
 
+注意： cpu 如果使用了 intel 酷睿多线程技术，可能会出现 cpu 使用率是实际物理核数 2 倍的情况，即： 2c， 使用率达到 400 %
 
 
 ##### agent-sdk-plugin 详解
